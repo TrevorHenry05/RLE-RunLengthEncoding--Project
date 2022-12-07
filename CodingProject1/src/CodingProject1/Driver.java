@@ -23,9 +23,11 @@ public class Driver {
      */
 	public static void main(String[] theArgs) throws IOException  {
 		
-		BufferedWriter out = new BufferedWriter(new FileWriter("D:\\School\\Eclipse-workspace-external\\CodingProject1\\resources\\Output.txt"));
+		String currDirectory = System.getProperty("user.dir");
 		
-		Scanner input = new Scanner(new FileInputStream("D:\\School\\Eclipse-workspace-external\\CodingProject1\\resources\\input.txt"));
+		BufferedWriter out = new BufferedWriter(new FileWriter(currDirectory + "\\resources\\Output.txt"));
+		
+		Scanner input = new Scanner(new FileInputStream( currDirectory + "\\resources\\input.txt"));
 
 	    
 		
